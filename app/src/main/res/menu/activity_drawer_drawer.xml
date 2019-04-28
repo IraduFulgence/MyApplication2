@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Your wishes"
+
+            />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/mail"
+            android:title="Email" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/foods"
+            android:title=" Order dish"
+        />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/rec"
+            android:title=" Request Receipt" />
+
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@mipmap/foods"
+            android:title="view dish" />
+        <!--<item
+            android:id="@+id/nav_viewreceipt"
+            android:icon="@mipmap/receipe"
+            android:title="view receipt"/>-->
+    </group>
+
+    <item android:title="Changes">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/lockw"
+                android:title="Change password" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/profile"
+                android:title="Change profile" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/app_name"
+    android:id="@+id/ca"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:fontFamily="serif"
+    android:textSize="25sp"
+    android:layout_marginEnd="100dp"
+    android:layout_marginStart="100dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="30dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/camelia" />
+<EditText
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:hint="@string/email"
+    android:textSize="30sp"
+    android:layout_marginStart="100dp"
+    android:layout_marginLeft="100dp"
+    android:textColor="@android:color/white"
+    android:inputType="textEmailAddress"
+    android:background="#07000000"
+    android:textColorHint="@android:color/white"
+    tools:ignore="Autofill" />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:hint="@string/password"
+        android:textSize="40sp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:textColor="@android:color/white"
+        android:inputType="textPassword"
+        android:background="#07000000"
+        android:textColorHint="@android:color/white"
+        tools:ignore="Autofill" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="80dp"/>
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyle"/>
+</LinearLayout>
